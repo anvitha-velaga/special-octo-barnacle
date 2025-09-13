@@ -1,4 +1,4 @@
-#diff types-single,multiple,heirarichal
+#diff types-single,multiple,hierarchical
 #single- child/sub class inherit properties from one parent/super class
 class Vehicle:
     def accelerates(self):
@@ -107,6 +107,23 @@ s=Student()
 s.works()
 s.comes()
 s.learns()
+#HERARCHICAL-INHERITENCE
+class Animal:
+    def speaks(self):
+        print("Animal speaks")
+class dog(Animal):
+    def speaks(self):
+        print("dog barks")
+class cat(Animal):
+    def speaks(self):
+        print("cat meows")
+
+a=Animal()
+d=dog()
+c=cat()
+a.speaks()
+d.speaks()
+c.speaks()
 
  
 
